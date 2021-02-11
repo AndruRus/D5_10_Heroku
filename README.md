@@ -10,7 +10,7 @@ $ git commit -m "initial commit"
 
 $ heroku create
 
-$ heroku config:set DISABLE_COLLECTSTATIC=1
+$ heroku config:set DISABLE_COLLECTSTATIC=1 -- Для того чтобы небыло ошибки запрещаем на время установки обращение к статическим файлам
 
 
 Правим модуль в Heroku
@@ -28,7 +28,7 @@ $ git push heroku master
 
 После получения положительного результата о установке
 
-$ heroku config:set DISABLE_COLLECTSTATIC=0
+$ heroku config:set DISABLE_COLLECTSTATIC=0 -- Подключаем статические файлы после установки приложения
 
 $ heroku run python manage.py migrate
 
