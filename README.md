@@ -14,7 +14,9 @@ $ heroku config:set DISABLE_COLLECTSTATIC=1
 
 
 Правим модуль в Heroku
+
 Resources => добавляем Heroku Postgres
+
 Settings => Reveal Config Vars добавляем SECRET_KEY и его значение
 
 
